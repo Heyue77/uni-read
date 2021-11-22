@@ -1,0 +1,69 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/listen/listen",
+    "pages/bookrack/bookrack",
+    "pages/mine/mine"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小众闲书",
+    "navigationBarBackgroundColor": "#d5a3c9",
+    "backgroundColor": "#e3dae9"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#d5a3c9",
+    "borderStyle": "white",
+    "position": "bottom",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/bookrack/bookrack",
+        "text": "书架",
+        "iconPath": "static/tabs/bookrack.png",
+        "selectedIconPath": "static/tabs/bookrack-active.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "书城",
+        "iconPath": "static/tabs/bookstore.png",
+        "selectedIconPath": "static/tabs/bookstore-active.png"
+      },
+      {
+        "pagePath": "pages/listen/listen",
+        "text": "听书",
+        "iconPath": "static/tabs/listen.png",
+        "selectedIconPath": "static/tabs/listen-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine-active.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": ""
+    }
+  },
+  "usingComponents": {
+    "van-search": "/wxcomponents/vant-weapp/search/index",
+    "van-grid": "/wxcomponents/vant-weapp/grid/index",
+    "van-grid-item": "/wxcomponents/vant-weapp/grid-item/index",
+    "van-cell": "/wxcomponents/vant-weapp/cell/index",
+    "van-cell-group": "/wxcomponents/vant-weapp/cell-group/index",
+    "van-tag": "/wxcomponents/vant-weapp/tag/index",
+    "van-rate": "/wxcomponents/vant-weapp/rate/index",
+    "van-loading": "/wxcomponents/vant-weapp/loading/index",
+    "van-toast": "/wxcomponents/vant-weapp/toast/index",
+    "van-action-sheet": "/wxcomponents/vant-weapp/action-sheet/index",
+    "van-sidebar": "/wxcomponents/vant-weapp/sidebar/index",
+    "van-sidebar-item": "/wxcomponents/vant-weapp/sidebar-item/index",
+    "van-nav-bar": "/wxcomponents/vant-weapp/nav-bar/index",
+    "van-skeleton": "/wxcomponents/vant-weapp/skeleton/index"
+  }
+}
