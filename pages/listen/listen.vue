@@ -62,11 +62,7 @@
 						title: "穿越架空",
 						entityId: 3109
 					},
-					{
-						id:10,
-						title: "其他",
-						entityId: 2
-					},
+					
 				]
 			}
 		},

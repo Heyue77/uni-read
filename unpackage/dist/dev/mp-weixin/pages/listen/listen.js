@@ -192,12 +192,8 @@ var _default =
       {
         id: 9,
         title: "穿越架空",
-        entityId: 3109 },
+        entityId: 3109 }] };
 
-      {
-        id: 10,
-        title: "其他",
-        entityId: 2 }] };
 
 
 
