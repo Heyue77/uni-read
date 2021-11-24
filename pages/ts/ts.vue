@@ -9,22 +9,31 @@
 			<!-- #endif -->
 		</view>
 		<view class="content">
-
 			<!-- #ifdef H5 -->
-			<image class="zuo" ref="resourced" src="@/static/tabs/zuo.png" mode="widthFix" @click="qec(resourceb)"></image>
-			<view @click="bf" class="tag" ref="resourced.path">
-				<text class="iconfont icon-bofang" v-show="!tag"></text>
-				<text class="iconfont icon-zanting1" v-show="tag"></text>
+			<view class="zu">
+				<image class="zuo" src="@/static/tabs/zuo.png" mode="widthFix" @click="qec(resourceb)"></image>
 			</view>
-			<image ref="resourced" class="you" src="@/static/tabs/you.png" mode="widthFix" @click="nec(resourceb)"></image>
-			<!-- #endif -->
-			<!-- #ifdef MP-WEIXIN -->
-			<image class="zuo" src="@/static/tabs/zuo.png" mode="widthFix" @click="qec(resourceb)"></image>
 			<view @click="bf" class="tag">
 				<text class="iconfont icon-bofang" v-show="!tag"></text>
 				<text class="iconfont icon-zanting1" v-show="tag"></text>
 			</view>
-			<image class="you" src="@/static/tabs/you.png" mode="widthFix" @click="nec(resourceb)"></image>
+			<view class="yo">
+				
+				<image class="you" src="@/static/tabs/you.png" mode="widthFix" @click="nec(resourceb)"></image>
+			</view>
+			<!-- #endif -->
+			<!-- #ifdef MP-WEIXIN -->
+			<view class="zu">
+				<image class="zuo" src="@/static/tabs/zuo.png" mode="widthFix" @click="qec(resourceb)"></image>
+			</view>
+			<view @click="bf" class="tag">
+				<text class="iconfont icon-bofang" v-show="!tag"></text>
+				<text class="iconfont icon-zanting1" v-show="tag"></text>
+			</view>
+			<view class="yo">
+				
+				<image class="you" src="@/static/tabs/you.png" mode="widthFix" @click="nec(resourceb)"></image>
+			</view>
 
 			<!-- #endif -->
 
@@ -53,22 +62,20 @@
 			return {
 				resourcem: [],
 				resourceb: [],
-				section:"",
 				tag: false
 			}
 		},
 		onLoad(options) {
 			console.log(options)
-			this.section =options.section
+			this.section = options.section
 			this.bookId = options.bookId
-			this.id=options.id
-			
+			this.id = options.id
 			this.getResourcebData()
 			this.getResourcemData()
 		},
-		
+
 		methods: {
-			
+
 			async getResourcemData() {
 				const result = await requestGet(getBookDetailURL, {
 					bookId: this.bookId
@@ -84,11 +91,11 @@
 					entityId: this.bookId,
 					entityType: 3,
 					opType: 1,
-					sections:`[`+this.section+`]`,
-					type:0
+					sections: `[` + this.section + `]`,
+					type: 0
 				});
 				this.resourceb = result.list[0]
-				console.log(this.resourceb,`[`+this.section+`]`,"xxxx")
+				console.log(this.resourceb, `[` + this.section + `]`, "xxxx")
 			},
 			bf() {
 				myAudio.src = this.resourceb.path
@@ -112,7 +119,7 @@
 					this.section++
 					this.getResourcebData()
 				}
-				
+
 			},
 			qec(resourceb) {
 				this.tag = false
@@ -126,7 +133,7 @@
 					this.section--
 					this.getResourcebData()
 				}
-				
+
 			},
 			// #endif
 			// #ifdef MP-WEIXIN
@@ -189,47 +196,89 @@
 </script>
 
 <style lang="less" scoped>
+	//#ifdef MP-WEIXIN
 	.bft {
 		.tp {
 			width: 100%;
 		}
-
 		.content {
 			display: flex;
-
 			.tag {
 				flex: 1;
-
+				text-align: center;
 				.iconfont {
-					text-align: center;
-					font-size: 100px;
+					font-size: 30px;
 				}
-
 			}
-
-			.zuo {
+			.zu {
 				flex: 1;
-				height: 30px;
-				width: 30px;
-				margin: auto;
 
+				.zuo {
+					float: right;
+					height: 30px;
+					width: 30px;
+				}
 			}
-
-			.you {
-				height: 30px;
-				width: 30px;
+			.yo {
 				flex: 1;
-				margin: auto;
+				.you {
+					float: left;
+					height: 30px;
+					width: 30px;
+				}
 			}
-
-
 		}
 	}
-	.bott{
+	.bott {
 		width: 95%;
 		margin: auto;
 		background-color: #fff;
 		border-radius: 5%;
 		line-height: 30px;
 	}
+	//#endif
+	//#ifdef H5
+	.bft {
+		.tp {
+			width: 100%;
+		}
+		.content {
+			width: 80%;
+			height:50px;
+			display: flex;
+			.tag {	
+				height: 100%;
+				flex: 4;
+				text-align: center;
+				.iconfont {
+					font-size: 50px;
+				}
+			}
+			.zu {
+				flex: 1;
+				height: 100%;
+				.zuo{
+					width:100%;
+					height:100%;
+				}
+			
+			}
+			.yo {
+				flex: 1;
+				height:100%;
+				.you{
+					width: 100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.bott {
+		width: 95%;
+		margin: auto;
+		background-color: #fff;
+		border-radius: 5%;
+		line-height: 30px;
+	}
+	//#endif
 </style>

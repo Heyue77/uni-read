@@ -138,6 +138,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 var _default =
 {
   data: function data() {
@@ -176,7 +177,27 @@ var _default =
       {
         id: 6,
         title: "戏曲",
-        entityId: 4 }] };
+        entityId: 4 },
+
+      {
+        id: 7,
+        title: "成功",
+        entityId: 79 },
+
+      {
+        id: 8,
+        title: "财经",
+        entityId: 3085 },
+
+      {
+        id: 9,
+        title: "穿越架空",
+        entityId: 3109 },
+
+      {
+        id: 10,
+        title: "其他",
+        entityId: 2 }] };
 
 
 

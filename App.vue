@@ -26,7 +26,6 @@
 	       url('//at.alicdn.com/t/font_2895082_djj4pt421jv.woff?t=1636076950756') format('woff'),
 	       url('//at.alicdn.com/t/font_2895082_djj4pt421jv.ttf?t=1636076950756') format('truetype');
 	}
-	
 	.iconfont {
 	  font-family: "iconfont" !important;
 	  font-size: 16px;
@@ -34,7 +33,6 @@
 	  -webkit-font-smoothing: antialiased;
 	  -moz-osx-font-smoothing: grayscale;
 	}
-	
 	.icon-yangqitingshu:before {
 	  content: "\e62f";
 	}

@@ -25,7 +25,7 @@
 	export default {
 		data() {
 			return {
-				con: [],
+				con: []
 			}
 		},
 		onLoad(options) {
