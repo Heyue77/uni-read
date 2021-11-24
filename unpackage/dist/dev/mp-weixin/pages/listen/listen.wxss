@@ -1,0 +1,10 @@
+.item.data-v-1d589fe6 {
+  background-color: 0%;
+  line-height: 50px;
+  margin-left: 20px;
+}
+.item .title.data-v-1d589fe6 {
+  font-size: 18px;
+  color: #333;
+}
+

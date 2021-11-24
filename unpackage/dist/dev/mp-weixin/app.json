@@ -3,7 +3,20 @@
     "pages/index/index",
     "pages/listen/listen",
     "pages/bookrack/bookrack",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/bookinfo/bookinfo",
+    "pages/bookpage/bookpage",
+    "pages/classify/classify",
+    "pages/feedback/feedback",
+    "pages/help/help",
+    "pages/morelist/morelist",
+    "pages/lista/lista",
+    "pages/listaa/listaa",
+    "pages/login/login",
+    "pages/rank/rank",
+    "pages/readhistory/readhistory",
+    "pages/search/search",
+    "pages/ts/ts"
   ],
   "subPackages": [],
   "window": {
@@ -50,20 +63,5 @@
       "desc": ""
     }
   },
-  "usingComponents": {
-    "van-search": "/wxcomponents/vant-weapp/search/index",
-    "van-grid": "/wxcomponents/vant-weapp/grid/index",
-    "van-grid-item": "/wxcomponents/vant-weapp/grid-item/index",
-    "van-cell": "/wxcomponents/vant-weapp/cell/index",
-    "van-cell-group": "/wxcomponents/vant-weapp/cell-group/index",
-    "van-tag": "/wxcomponents/vant-weapp/tag/index",
-    "van-rate": "/wxcomponents/vant-weapp/rate/index",
-    "van-loading": "/wxcomponents/vant-weapp/loading/index",
-    "van-toast": "/wxcomponents/vant-weapp/toast/index",
-    "van-action-sheet": "/wxcomponents/vant-weapp/action-sheet/index",
-    "van-sidebar": "/wxcomponents/vant-weapp/sidebar/index",
-    "van-sidebar-item": "/wxcomponents/vant-weapp/sidebar-item/index",
-    "van-nav-bar": "/wxcomponents/vant-weapp/nav-bar/index",
-    "van-skeleton": "/wxcomponents/vant-weapp/skeleton/index"
-  }
+  "usingComponents": {}
 }

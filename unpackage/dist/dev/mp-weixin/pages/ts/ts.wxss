@@ -1,0 +1,33 @@
+.bft .tp.data-v-93d25034 {
+  width: 100%;
+}
+.bft .content.data-v-93d25034 {
+  display: flex;
+}
+.bft .content .tag.data-v-93d25034 {
+  flex: 1;
+}
+.bft .content .tag .iconfont.data-v-93d25034 {
+  text-align: center;
+  font-size: 100px;
+}
+.bft .content .zuo.data-v-93d25034 {
+  flex: 1;
+  height: 30px;
+  width: 30px;
+  margin: auto;
+}
+.bft .content .you.data-v-93d25034 {
+  height: 30px;
+  width: 30px;
+  flex: 1;
+  margin: auto;
+}
+.bott.data-v-93d25034 {
+  width: 95%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 5%;
+  line-height: 30px;
+}
+

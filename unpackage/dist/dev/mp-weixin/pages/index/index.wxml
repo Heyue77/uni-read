@@ -1,1 +1,1 @@
-<view class="content"><van-search vue-id="8dd740cc-1" value="{{value}}" shape="round" background="#e3dae9" placeholder="请输入搜索关键词" bind:change="onChange" bind:search="onSearch" data-com-type="wx" bind:__l="__l"></van-search></view>
+<view>111</view>

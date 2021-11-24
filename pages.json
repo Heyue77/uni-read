@@ -136,6 +136,16 @@
             }
             
         }
+        
+        ,{
+            "path" : "pages/ts/ts",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

@@ -1,0 +1,33 @@
+.item.data-v-6c6cca8e {
+  height: 145px;
+  display: flex;
+}
+.item image.data-v-6c6cca8e {
+  height: 100%;
+  flex: 2;
+}
+.item .right.data-v-6c6cca8e {
+  height: 100%;
+  padding: 5px;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+}
+.item .right .name.data-v-6c6cca8e {
+  flex: 1;
+  font-weight: 700;
+}
+.item .right .desc.data-v-6c6cca8e {
+  flex: 2;
+  font-size: 14px;
+  overflow: hidden;
+}
+.item .right .author.data-v-6c6cca8e {
+  flex: 1;
+  font-weight: 700px;
+}
+.item .right .author .iconfont.data-v-6c6cca8e {
+  color: orange;
+  font-size: 24px;
+}
+
