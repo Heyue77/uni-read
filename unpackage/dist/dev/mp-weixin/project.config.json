@@ -11,23 +11,19 @@
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "wx608ca878cb54ebff",
+  "appid": "wx4f9db1fc45b7ce00",
   "projectname": "uni-read",
   "condition": {
     "search": {
-      "current": -1,
       "list": []
     },
     "conversation": {
-      "current": -1,
       "list": []
     },
     "game": {
-      "current": -1,
       "list": []
     },
     "miniprogram": {
-      "current": -1,
       "list": []
     }
   }

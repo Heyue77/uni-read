@@ -1,0 +1,159 @@
+.container.data-v-0ee27066 {
+  height: 93vh;
+  position: relative;
+  color: #333;
+}
+.container .book.data-v-0ee27066 {
+  overflow: hidden;
+  padding: 20rpx;
+  background-color: #fff;
+}
+.container .book .bookimg.data-v-0ee27066 {
+  float: left;
+  width: 250rpx;
+  vertical-align: top;
+  margin: 0 20rpx 20rpx 0;
+}
+.container .book .booktitle.data-v-0ee27066 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.container .book .bookauthor.data-v-0ee27066 {
+  font-size: 14px;
+  margin: 20rpx 0;
+}
+.container .book .cate.data-v-0ee27066 {
+  margin: 20rpx 0;
+}
+.container .book .cate .bookauthor.data-v-0ee27066 {
+  margin-right: 18rpx;
+}
+.container .book .bookstore.data-v-0ee27066 {
+  font-size: 14px;
+  margin: 20rpx 0;
+}
+.container .book .bookstore .line.data-v-0ee27066 {
+  margin: 0 20rpx;
+}
+.container .book .bookstore .count.data-v-0ee27066 {
+  color: #aaa;
+}
+.container .grid.data-v-0ee27066 {
+  display: flex;
+  padding: 20rpx 0 40rpx 0;
+  background-color: #fff;
+}
+.container .grid .item.data-v-0ee27066 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.container .grid .item .name.data-v-0ee27066 {
+  color: #aaa;
+  font-size: 14px;
+}
+.container .info.data-v-0ee27066 {
+  padding: 20rpx;
+  font-size: 14px;
+}
+.container .info .title.data-v-0ee27066 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20rpx 0;
+}
+.container .info .longIntro.data-v-0ee27066 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+}
+.container .info .fold.data-v-0ee27066 {
+  -webkit-line-clamp: 3;
+}
+.container .info .unfold.data-v-0ee27066 {
+  -webkit-line-clamp: 0;
+}
+.container .newcomment .commenttitle.data-v-0ee27066 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20rpx 10rpx;
+  background-color: #fff;
+}
+.container .newcomment .commentitem.data-v-0ee27066 {
+  padding: 20rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  background-color: #fff;
+}
+.container .newcomment .commentitem .left.data-v-0ee27066 {
+  flex: 1;
+  margin-right: 20rpx;
+  vertical-align: center;
+}
+.container .newcomment .commentitem .msg.data-v-0ee27066 {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20rpx 10rpx 0;
+}
+.container .newcomment .commentitem .msg .time.data-v-0ee27066 {
+  font-size: 10px;
+}
+.container .newcomment .commentitem .right.data-v-0ee27066 {
+  position: absolute;
+  top: 0;
+  right: 50rpx;
+}
+.container .hobit.data-v-0ee27066 {
+  margin: 60rpx 0rpx;
+  overflow: hidden;
+  display: inline-block;
+  padding-bottom: 80rpx;
+  background-color: #fff;
+  width: 100%;
+}
+.container .hobit .itemtitle.data-v-0ee27066 {
+  font-size: 16px;
+  font-weight: 700;
+  padding: 20rpx 10rpx;
+}
+.container .hobit .hobititem.data-v-0ee27066 {
+  padding: 20rpx;
+  width: 25%;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+}
+.container .hobit .hobititem .hobitcover.data-v-0ee27066 {
+  width: 90%;
+}
+.container .hobit .hobititem .itemname.data-v-0ee27066 {
+  font-size: 14px;
+}
+.btn.data-v-0ee27066 {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+.btn .butt.data-v-0ee27066 {
+  width: 80%;
+  flex: 1;
+  padding: 10px 20rpx;
+  margin: 20rpx;
+  text-align: center;
+  border-radius: 10px;
+}
+.btn .add.data-v-0ee27066 {
+  background-color: #8da5b4;
+}
+.btn .read.data-v-0ee27066 {
+  background-color: #bd9a9f;
+}
+

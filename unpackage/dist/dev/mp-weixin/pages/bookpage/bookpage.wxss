@@ -1,0 +1,99 @@
+
+.data-v-7eefed86 ::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.container.data-v-7eefed86 {
+  position: relative;
+}
+.container .scroll.data-v-7eefed86 {
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 100vh;
+}
+.container .scroll .content.data-v-7eefed86 {
+  display: inline-block;
+  line-height: 60rpx;
+  text-indent: 2em;
+}
+.container .scroll .change.data-v-7eefed86 {
+  display: flex;
+}
+.container .scroll .change .item.data-v-7eefed86 {
+  flex: 1;
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 60rpx;
+  line-height: 60rpx;
+}
+.container .menu.data-v-7eefed86 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 300rpx;
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  background-color: #eee;
+}
+.container .menu .list.data-v-7eefed86 {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+}
+.container .menu .item.data-v-7eefed86 {
+  flex: 1;
+  text-align: center;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.container .menu .color.data-v-7eefed86 {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+}
+.container .menu .color .white.data-v-7eefed86 {
+  background-color: #eaeaea;
+}
+.container .menu .color .black.data-v-7eefed86 {
+  background-color: #666;
+}
+.container .menu .color .green.data-v-7eefed86 {
+  background-color: #d5f6d6;
+}
+.container .menu .font.data-v-7eefed86 {
+  display: flex;
+  border-bottom: 1px solid #e3e3e3;
+}
+.container .catapage.data-v-7eefed86 {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: pink;
+  display: none;
+}
+.container .catapage .catalog.data-v-7eefed86 {
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+  padding-left: 20rpx;
+  background-color: #fff;
+}
+.container .catapage .cancel.data-v-7eefed86 {
+  height: 80rpx;
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.container .fold.data-v-7eefed86 {
+  display: none;
+}
+.container .unfold.data-v-7eefed86 {
+  display: block;
+}
+

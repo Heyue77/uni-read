@@ -1,0 +1,42 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/bookinfo/bookinfo",
+          "pathName": "pages/bookinfo/bookinfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/bookpage/bookpage",
+          "pathName": "pages/bookpage/bookpage",
+          "query": "bookId=19187&chapterId=341",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

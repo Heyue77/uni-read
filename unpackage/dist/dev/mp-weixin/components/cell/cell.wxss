@@ -1,0 +1,68 @@
+.list-item.data-v-e9a61878 {
+  padding: 10rpx 30rpx;
+  background-color: #fff;
+  border-radius: 5%;
+}
+.list-item.data-v-e9a61878:first-of-type {
+  border-radius: 0 0 5% 5%;
+}
+.list-item .qqq.data-v-e9a61878 {
+  display: flex;
+}
+.list-item .qqq .listicon.data-v-e9a61878 {
+  flex: 2;
+  width: 140rpx;
+  height: 290rpx;
+  display: inline-block;
+  padding-right: 20rpx;
+}
+.list-item .qqq .listicon image.data-v-e9a61878 {
+  width: 100%;
+}
+.list-item .qqq .right.data-v-e9a61878 {
+  flex: 5;
+  flex-direction: column;
+  display: flex;
+  overflow: hidden;
+  padding-top: 30rpx;
+}
+.list-item .qqq .right .btitle.data-v-e9a61878 {
+  width: 100%;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+.list-item .qqq .right .shortinfo.data-v-e9a61878 {
+  width: 100%;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /*两行,超出为省略号*/
+  -webkit-box-orient: vertical;
+  align-content: center;
+  color: #6A6A6A;
+  font-size: 28rpx;
+  margin-top: 20rpx;
+}
+.list-item .qqq .right .auty.data-v-e9a61878 {
+  width: 100%;
+  display: flex;
+  margin-top: 20rpx;
+}
+.list-item .qqq .right .auty .author.data-v-e9a61878 {
+  flex: 5;
+  color: #6A6A6A;
+  font-size: 24rpx;
+}
+.list-item .qqq .right .auty .type.data-v-e9a61878 {
+  flex: 3;
+  background-color: rgba(196, 180, 191, 0.3);
+  border-radius: 30rpx;
+  color: #5f5b5b;
+  font-size: 10px;
+  text-align: center;
+  padding: 0 8rpx;
+  margin-left: 10rpx;
+}
+

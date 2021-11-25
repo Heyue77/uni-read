@@ -1,0 +1,28 @@
+.btitle {
+	display: flex;
+	margin-top: 20rpx;
+	background-color: #fff;
+	padding-top:20rpx;
+	padding-left: 10rpx;
+	border-radius: 20rpx 20rpx 0 0;
+
+}
+
+.titleTag {
+	flex: 5;
+	font-size: 20px;
+	display: flex;
+}
+
+.bmore {
+	flex: 2;
+	text-align: right;
+	margin-right: 25rpx;
+	font-size: 14px;
+	color: #aaa;
+
+	
+}
+.icon-changyong_fanhui {
+		font-size: 12px;
+	}

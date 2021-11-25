@@ -1,0 +1,70 @@
+page.data-v-71432b06 {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.productNav.data-v-71432b06 {
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei";
+}
+.left.data-v-71432b06 {
+  width: 25%;
+  font-size: 30rpx;
+  background-color: #fff;
+}
+.left view.data-v-71432b06 {
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.selected.data-v-71432b06 {
+  background-color: #f4f4f4;
+  border-left: 2px solid #c74772;
+  font-weight: bold;
+  color: #c74772;
+}
+.normal.data-v-71432b06 {
+  background-color: #fff;
+}
+.right.data-v-71432b06 {
+  width: 75%;
+  margin: 0;
+}
+swiper.data-v-71432b06 {
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+.type.data-v-71432b06 {
+  background-color: #f4f4f4;
+}
+.swpitem.data-v-71432b06 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.swpitem .rankitem.data-v-71432b06 {
+  width: 43%;
+  background-color: #fff;
+  height: 130rpx;
+  line-height: 130rpx;
+  text-align: center;
+  margin: 10rpx;
+  padding: 5rpx;
+  border-radius: 30rpx;
+  vertical-align: center;
+  font-size: 14px;
+  border: 1px solid #e9bfe3;
+  overflow: hidden;
+  display: flex;
+}
+.swpitem .rankitem .title.data-v-71432b06 {
+  flex: 2;
+}
+.swpitem .rankitem image.data-v-71432b06 {
+  flex: 1;
+  width: 70rpx !important;
+  height: 150rpx !important;
+  vertical-align: center;
+}
+scroll-view.data-v-71432b06 {
+  height: 1200rpx;
+}
+
