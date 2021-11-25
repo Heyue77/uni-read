@@ -93,6 +93,29 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "recyclableRender", function() { return recyclableRender; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components
+try {
+  components = {
+    uniSearchBar: function() {
+      return Promise.all(/*! import() | uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar */[__webpack_require__.e("common/vendor"), __webpack_require__.e("uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar")]).then(__webpack_require__.bind(null, /*! @/uni_modules/uni-search-bar/components/uni-search-bar/uni-search-bar.vue */ 127))
+    }
+  }
+} catch (e) {
+  if (
+    e.message.indexOf("Cannot find module") !== -1 &&
+    e.message.indexOf(".vue") !== -1
+  ) {
+    console.error(e.message)
+    console.error("1. 排查组件名称拼写是否正确")
+    console.error(
+      "2. 排查组件是否符合 easycom 规范，文档：https://uniapp.dcloud.net.cn/collocation/pages?id=easycom"
+    )
+    console.error(
+      "3. 若组件不符合 easycom 规范，需手动引入，并在 components 中注册该组件"
+    )
+  } else {
+    throw e
+  }
+}
 var render = function() {
   var _vm = this
   var _h = _vm.$createElement
@@ -150,6 +173,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 var _http = __webpack_require__(/*! @/utils/http.js */ 84);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}var _default =
 
 
@@ -157,7 +181,9 @@ var _http = __webpack_require__(/*! @/utils/http.js */ 84);function _interopRequ
 {
   data: function data() {
     return {
-      con: [] };
+      con: [],
+      name: "",
+      con1: [] };
 
   },
   onLoad: function onLoad(options) {
@@ -170,13 +196,36 @@ var _http = __webpack_require__(/*! @/utils/http.js */ 84);function _interopRequ
     getResourceData: function getResourceData() {var _this = this;return _asyncToGenerator( /*#__PURE__*/_regenerator.default.mark(function _callee() {var result;return _regenerator.default.wrap(function _callee$(_context) {while (1) {switch (_context.prev = _context.next) {case 0:_context.next = 2;return (
                   (0, _http.requestGet)(_http.getResourceListURL + _this.entityId));case 2:result = _context.sent;
                 _this.con = result.books;
-                console.log(_this.con);case 5:case "end":return _context.stop();}}}, _callee);}))();
-    },
+                _this.con1 = result.books;
+                // console.log(this.con)
+              case 5:case "end":return _context.stop();}}}, _callee);}))();},
     mulu: function mulu(item) {
       uni.navigateTo({
         url: '/pages/listaa/listaa?id=' + item.id });
 
-    } } };exports.default = _default;
+    },
+    search: function search(e) {
+      console.log(this.con, e.value);
+      if (e.value != this.value) {
+        this.con = this.con1.filter(function (item) {return item.name.includes(e.value);});
+        this.value = e.value;
+      } else {
+        this.con = this.con.filter(function (item) {return item.name.includes(e.value);});
+        this.value = e.value;
+      }
+      console.log(this.con);
+
+    },
+    input: function input(e) {
+      console.log(this.con);
+    } },
+
+  onReachBottom: function onReachBottom() {
+    uni.showToast({
+      title: "\u5230\u5E95\u4E86",
+      icon: 'none' });
+
+  } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! @dcloudio/uni-mp-weixin/dist/uni.api.esm.js */ 9)["default"]))
 
 /***/ }),

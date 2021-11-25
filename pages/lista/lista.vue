@@ -1,5 +1,7 @@
 <template>
 	<view>
+		<uni-search-bar @confirm="search" @input="input" v-model="name">
+		</uni-search-bar>
 		<scroll-view scroll-y="true">
 			<view v-for="item in con" :key="item.id" class="item" @click="mulu(item)">
 				<image :src="item.cover" mode="widthFix" class="itemimg"></image>
@@ -13,19 +15,20 @@
 				</view>
 			</view>
 		</scroll-view>
-
 	</view>
 </template>
 
 <script>
 	import {
 		requestGet,
-		getResourceListURL
+		getResourceListURL,
 	} from "@/utils/http.js";
 	export default {
 		data() {
 			return {
-				con: []
+				con: [],
+				name: "",
+				con1: [],
 			}
 		},
 		onLoad(options) {
@@ -38,50 +41,76 @@
 			async getResourceData() {
 				const result = await requestGet(getResourceListURL + this.entityId)
 				this.con = result.books
-				console.log(this.con)
+				this.con1 = result.books
+				// console.log(this.con)
 			},
-			mulu(item){
+			mulu(item) {
 				uni.navigateTo({
-				    url: '/pages/listaa/listaa?id=' + item.id
+					url: '/pages/listaa/listaa?id=' + item.id
 				})
-			}
+			},
+			search(e) {
+				console.log(this.con, e.value)
+				if (e.value != this.value) {
+					this.con = this.con1.filter(item => item.name.includes(e.value))
+					this.value = e.value
+				} else {
+					this.con = this.con.filter(item => item.name.includes(e.value))
+					this.value = e.value
+				}
+				console.log(this.con)
 
-		}
+			},
+			input(e) {
+				console.log(this.con)
+			}
+		},
+		onReachBottom() {
+				uni.showToast({
+					title: `到底了`,
+					icon: 'none'
+				})
+		},
 	}
 </script>
 
 <style lang="less" scoped>
 	.item {
-		height:145px;
+		height: 145px;
 		display: flex;
+
 		image {
-			height:100%;
+			height: 100%;
 			flex: 2;
 		}
 
 		.right {
-			height:100%;
+			height: 100%;
 			padding: 5px;
 			flex: 5;
 			display: flex;
-			  flex-direction: column;
-			.name{
-				flex:1;
-				font-weight: 700;	
+			flex-direction: column;
+
+			.name {
+				flex: 1;
+				font-weight: 700;
 			}
-			.desc{
-				flex:2;
+
+			.desc {
+				flex: 2;
 				font-size: 14px;
 				overflow: hidden;
 			}
-			.author{
+
+			.author {
 				flex: 1;
 				font-weight: 700px;
-			
-			.iconfont{
-				color: orange;
-				font-size: 24px;
-			}}
+
+				.iconfont {
+					color: orange;
+					font-size: 24px;
+				}
+			}
 		}
 
 	}

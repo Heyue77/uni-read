@@ -37,10 +37,9 @@ export function requestGet(url, data) {
 
 // 听书接口
 export const getBookMenuURL = "https://m.lrts.me/ajax/getBookMenu/";
-export const getResourceListURL = "https://m.lrts.me/ajax/getResourceList?dsize=20&entityType=1&pageNum=1&entityId=";
+export const getResourceListURL = "https://m.lrts.me/ajax/getResourceList?dsize=100&entityType=1&pageNum=1&entityId=";
 export const getPlayPathURL = "https://m.lrts.me/ajax/getPlayPath/";
 export const getBookDetailURL = "https://m.lrts.me/ajax/getBookDetail/"
-
 
 // 轮播图接口
 export const bannerURL = "https://b.zhuishushenqi.com/category/classifylist?node=bf0a65255a5b4c138052dca8ef065753"; //GET请求

@@ -1,9 +1,11 @@
 <template>
 	<view>
 		<view class="leibie">类别</view>
+		<scroll-view scroll-y="true">
 		<view class="item" v-for="item in list" :key="item.id" @click="itemClick(item)">
 			<text class="title">{{item.title}}</text>
 		</view>
+		</scroll-view>
 	</view>
 </template>
 
@@ -71,7 +73,7 @@
 				uni.navigateTo({
 					url: '/pages/lista/lista?id=' + item.id + '&entityId=' + item.entityId
 				})
-			}
+			},
 		}
 	}
 </script>
